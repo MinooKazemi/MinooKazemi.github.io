@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Minoo Kazemi — Graphic Designer & Art Director. Exploring meaningful connections between ideas through visual identity and art direction.">
+  <meta name="theme-color" content="#F3F2ED">
+  <title>Minoo Kazemi — Graphic Designer & Art Director</title>
+  <style>
+/* Phase 1. No build tools or external font requests required. */
+:root{--paper:#f3f2ed;--ink:#171717;--muted:#777771;--readable-muted:#63635e;--rule:#d5d3cd;--white:#fff;--gutter:clamp(22px,5.2vw,88px)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:32px}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+a:focus-visible{outline:2px solid currentColor;outline-offset:6px}
+::selection{background:#171717;color:#f3f2ed}
+.wrap{max-width:1600px;margin-inline:auto;padding-inline:var(--gutter)}
+.skip-link{position:fixed;top:12px;left:12px;z-index:10;padding:14px;background:var(--ink);color:var(--white);transform:translateY(-160%)}
+.skip-link:focus{transform:translateY(0)}
+.site-header{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:119px}
+.wordmark{font-size:23px;font-weight:600;letter-spacing:-.9px}
+.wordmark span{display:block;margin-top:7px;font-size:11px;letter-spacing:.07em;font-weight:400;color:var(--readable-muted)}
+nav{display:flex;gap:36px;font-size:14px}
+nav a{padding-block:12px;position:relative}
+nav a::after{content:"";position:absolute;bottom:5px;left:0;right:0;height:1px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .2s}
+nav a:hover::after,nav a[aria-current]::after{transform:scaleX(1)}
+.eyebrow{font-size:11px;font-weight:400;letter-spacing:.12em;text-transform:uppercase}
+.hero{border-top:1px solid var(--rule);padding-top:62px;padding-bottom:65px}
+.hero>.eyebrow{margin:0 0 35px}
+h1{font-size:clamp(48px,7.6vw,116px);line-height:1.02;letter-spacing:-.065em;font-weight:400;margin:0}
+h1 span{color:var(--muted)}
+.hero-bottom{display:grid;grid-template-columns:1fr 1fr;align-items:end;gap:40px;margin-top:48px}
+.hero-bottom p{max-width:365px;justify-self:end;margin:0;font-size:16px;line-height:1.6;letter-spacing:-.2px}
+.text-link{display:inline-flex;align-items:center;justify-content:space-between;gap:40px;width:fit-content;font-size:13px;padding-block:12px;border-bottom:1px solid var(--ink)}
+.text-link span{font-size:19px;transition:transform .2s}
+.text-link:hover span{transform:translateY(3px)}
+.section-heading{border-top:1px solid var(--rule);display:flex;justify-content:space-between;align-items:baseline;gap:20px;padding-top:25px}
+.section-heading h2{font-size:21px;letter-spacing:-.65px;font-weight:400;margin:0}
+.section-heading sup{font-size:11px;margin-left:7px;vertical-align:top;letter-spacing:0}
+.section-heading>.eyebrow{color:var(--readable-muted)}
+.prototype-note{font-size:11px;color:var(--readable-muted);line-height:1.5;margin:15px 0 25px}
+.project-grid{display:grid;grid-template-columns:1.13fr 1fr;column-gap:clamp(24px,4.4vw,68px);row-gap:55px;align-items:start}
+.project.offset{margin-top:88px}
+.project-image{margin:0;position:relative;aspect-ratio:1.16;display:flex;flex-direction:column;justify-content:space-between;padding:25px;overflow:hidden}
+.dermatime{background:#e3e1d9;color:#53544e}
+.facetem{background:#d7d9d7;color:#505753}
+.afamed{background:#193e34;color:#e5e9e1}
+.podcast{background:#303133;color:#d6d6d4}
+.image-index{font-size:10px;letter-spacing:.12em}
+.placeholder-mark{display:flex;align-items:center;justify-content:center;gap:22px;flex:1;opacity:.48}
+.placeholder-mark span{font-weight:400;font-size:clamp(72px,9vw,145px);letter-spacing:-.08em}
+.placeholder-mark i{width:45px;height:1px;background:currentColor}
+figcaption{display:flex;justify-content:space-between;gap:12px;font-size:10px;letter-spacing:.09em}
+figcaption span{letter-spacing:0}
+.project-label{display:flex;justify-content:space-between;gap:15px;padding-top:20px}
+.project-label h3{font-size:16px;font-weight:500;letter-spacing:.02em;margin:0 0 8px}
+.project-label p{font-size:12px;line-height:1.5;color:var(--readable-muted);margin:0}
+.project-number{font-size:11px;color:var(--readable-muted)}
+.case-note{margin:40px 0 70px}
+.about{display:grid;grid-template-columns:1fr 1.25fr;gap:70px;border-top:1px solid var(--rule);padding-block:55px 90px}
+.about-aside>.eyebrow{margin:0}
+.portrait-placeholder{margin:36px 0 0;width:190px;aspect-ratio:4/5;border:1px solid var(--rule);display:flex;flex-direction:column;justify-content:space-between;padding:16px;color:var(--readable-muted)}
+.portrait-placeholder>span{font-size:42px;letter-spacing:-3px;font-weight:400}
+.portrait-placeholder figcaption{font-size:10px;letter-spacing:0}
+.about-copy h2{font-size:clamp(33px,3.8vw,56px);font-weight:400;line-height:1.06;letter-spacing:-.05em;margin:0 0 30px}
+.about-copy p{font-size:16px;line-height:1.7;max-width:530px;margin:0 0 17px}
+.about-copy p+p{color:var(--readable-muted)}
+.expertise{display:flex;flex-wrap:wrap;gap:10px 22px;list-style:none;padding:23px 0 0;margin:30px 0 0;border-top:1px solid var(--rule);font-size:11px;color:var(--readable-muted)}
+.contact{border-top:1px solid var(--rule);padding-block:37px 65px}
+.contact>.eyebrow{margin:0 0 26px}
+.contact-row{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.contact h2{font-size:clamp(52px,8.1vw,120px);letter-spacing:-.065em;line-height:1.05;font-weight:400;margin:0}
+.contact-arrow{font-size:clamp(50px,8vw,110px);line-height:1}
+.contact-details{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-top:35px}
+.contact-details p{font-size:12px;color:var(--readable-muted)}
+.site-footer{display:flex;justify-content:space-between;gap:22px;padding-block:26px;border-top:1px solid var(--rule);font-size:11px;color:var(--readable-muted)}
+.site-footer a{color:var(--ink)}
+@media(min-width:1600px){h1{font-size:116px}}
+@media(max-width:760px){.site-header{min-height:103px}.wordmark{font-size:20px}nav{gap:20px;font-size:12px}.hero{padding-top:43px;padding-bottom:44px}.hero>.eyebrow{font-size:10px;margin-bottom:28px}.hero-bottom{margin-top:30px;gap:25px;grid-template-columns:1fr}.hero-bottom p{justify-self:start;max-width:340px;font-size:15px;grid-row:1}.section-heading>.eyebrow{display:none}.project-grid{gap:33px 22px}.project.offset{margin-top:55px}.project-image{padding:16px;aspect-ratio:4/5}.placeholder-mark{gap:15px}.placeholder-mark span{font-size:76px}.placeholder-mark i{width:22px}figcaption{flex-direction:column;font-size:9px;gap:5px}.project-label h3{font-size:14px}.project-label p{font-size:11px}.about{gap:32px;grid-template-columns:1fr 1.5fr}.portrait-placeholder{width:140px}.about-copy p{font-size:14px}.site-footer>span:nth-child(2){display:none}}
+@media(max-width:480px){.site-header{gap:14px;min-height:100px}.wordmark{font-size:18px}.wordmark span{font-size:9px}nav{gap:16px;font-size:12px}nav a span{display:none}h1{font-size:clamp(36px,9.7vw,47px)}.project-grid{grid-template-columns:1fr;gap:35px}.project.offset{margin-top:0}.project-image{aspect-ratio:1.12;padding:22px}.placeholder-mark span{font-size:110px}.placeholder-mark i{width:40px}figcaption{flex-direction:row;font-size:10px}.project-label h3{font-size:16px}.project-label p{font-size:12px}.case-note{margin-bottom:50px}.about{grid-template-columns:1fr;padding-block:36px 55px;gap:30px}.about-aside{display:flex;justify-content:space-between;gap:15px;align-items:start}.portrait-placeholder{margin:0;width:94px;padding:10px}.portrait-placeholder>span{font-size:27px}.portrait-placeholder figcaption{font-size:9px;line-height:1.4}.about-copy h2{font-size:40px}.about-copy p{font-size:15px}.contact-details{align-items:flex-start;flex-direction:column;gap:8px}.contact{padding-bottom:40px}.site-footer{font-size:10px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
+</style>
+  
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="wordmark" href="#top" aria-label="Minoo Kazemi, back to top">Minoo Kazemi<span>Independent portfolio</span></a>
+    <nav aria-label="Main navigation"><a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main id="main" class="wrap">
+    <section class="hero" aria-labelledby="hero-title">
+      <p class="eyebrow">Graphic Designer &amp; Art Director</p>
+      <h1 id="hero-title">Connecting ideas.<br><span>Shaping identities.</span></h1>
+      <div class="hero-bottom"><a class="text-link" href="#work">Explore selected work <span aria-hidden="true">↓</span></a><p>Exploring meaningful connections between ideas to create thoughtful, cohesive visual identities.</p></div>
+    </section>
+    <section id="work" class="work" aria-labelledby="work-title">
+      <div class="section-heading"><h2 id="work-title">Selected works <sup>(04)</sup></h2><span class="eyebrow">Identity / Direction / Design</span></div>
+      <p class="prototype-note">Image placeholders · Original project imagery will be added.</p>
+      <div class="project-grid">
+        <article class="project">
+          <figure class="project-image dermatime" aria-label="DERMATIME image placeholder; original project imagery pending"><span class="image-index" aria-hidden="true">01 / 04</span><div class="placeholder-mark" aria-hidden="true"><span>01</span><i></i></div><figcaption>DERMATIME <span>Image placeholder</span></figcaption></figure>
+          <div class="project-label"><div><h3>DERMATIME</h3><p>Brand Identity / Packaging Design</p></div><span class="project-number" aria-hidden="true">01</span></div>
+        </article>
+        <article class="project offset">
+          <figure class="project-image facetem" aria-label="FACETEM image placeholder; original project imagery pending"><span class="image-index" aria-hidden="true">02 / 04</span><div class="placeholder-mark" aria-hidden="true"><span>02</span><i></i></div><figcaption>FACETEM <span>Image placeholder</span></figcaption></figure>
+          <div class="project-label"><div><h3>FACETEM</h3><p>Visual Identity / Brand Communication</p></div><span class="project-number" aria-hidden="true">02</span></div>
+        </article>
+        <article class="project">
+          <figure class="project-image afamed" aria-label="AFAMED image placeholder; original project imagery pending"><span class="image-index" aria-hidden="true">03 / 04</span><div class="placeholder-mark" aria-hidden="true"><span>03</span><i></i></div><figcaption>AFAMED <span>Image placeholder</span></figcaption></figure>
+          <div class="project-label"><div><h3>AFAMED</h3><p>Visual Identity Development / Art Direction</p></div><span class="project-number" aria-hidden="true">03</span></div>
+        </article>
+        <article class="project offset">
+          <figure class="project-image podcast" aria-label="TO PODCAST image placeholder; original project imagery pending"><span class="image-index" aria-hidden="true">04 / 04</span><div class="placeholder-mark" aria-hidden="true"><span>04</span><i></i></div><figcaption>TO PODCAST <span>Image placeholder</span></figcaption></figure>
+          <div class="project-label"><div><h3>TO PODCAST</h3><p>Concept / Key Visual</p></div><span class="project-number" aria-hidden="true">04</span></div>
+        </article>
+      </div>
+      <p class="prototype-note case-note">Homepage study · Full case studies will follow.</p>
+    </section>
+    <section id="about" class="about" aria-labelledby="about-title">
+      <div class="about-aside"><p class="eyebrow">A little about me</p><figure class="portrait-placeholder"><span aria-hidden="true">MK</span><figcaption>Portrait to be added</figcaption></figure></div>
+      <div class="about-copy"><h2 id="about-title">Different ideas.<br>A coherent whole.</h2><p>I'm Minoo Kazemi, a graphic designer and art director. My practice starts with finding connections between ideas—especially those that seem unrelated.</p><p>I bring these connections into visual identities, using concept-driven design, visual storytelling and a consistent visual language across each project.</p><ul class="expertise" aria-label="Areas of practice"><li>Visual identity</li><li>Art direction</li><li>Visual storytelling</li></ul></div>
+    </section>
+    <section id="contact" class="contact" aria-labelledby="contact-title"><p class="eyebrow">Start a conversation</p><div class="contact-row"><h2 id="contact-title">Let's connect.</h2><span class="contact-arrow" aria-hidden="true">↗</span></div><div class="contact-details"><p>Email &amp; social links to be added.</p><a class="text-link" href="https://github.com/MinooKazemi" target="_blank" rel="noopener noreferrer" aria-label="Minoo Kazemi on GitHub, opens in a new tab">GitHub <span aria-hidden="true">↗</span></a></div></section>
+  </main>
+  <footer class="site-footer wrap"><span>© <span id="year">2026</span> Minoo Kazemi</span><span>Graphic Designer &amp; Art Director</span><a href="#top">Back to top ↑</a></footer>
+<script>
+"use strict";
+// Navigation and content remain usable without JavaScript.
+const year = document.getElementById("year");
+if (year) year.textContent = String(new Date().getFullYear());
+const navigationLinks = [...document.querySelectorAll('nav a[href^="#"]')];
+if ("IntersectionObserver" in window) {
+  const observer = new IntersectionObserver((entries) => {
+    for (const entry of entries) {
+      if (!entry.isIntersecting) continue;
+      navigationLinks.forEach((link) => {
+        if (link.hash === "#" + entry.target.id) link.setAttribute("aria-current", "location");
+        else link.removeAttribute("aria-current");
+      });
+    }
+  }, { rootMargin: "-10% 0px -55% 0px", threshold: 0 });
+  document.querySelectorAll("#work, #about, #contact").forEach((section) => observer.observe(section));
+}
+</script>
+</body>
+</html>
