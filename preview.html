@@ -40,23 +40,23 @@ h1 span{color:var(--muted)}
 .section-heading sup{font-size:11px;margin-left:7px;vertical-align:top;letter-spacing:0}
 .section-heading>.eyebrow{color:var(--readable-muted)}
 .prototype-note{font-size:11px;color:var(--readable-muted);line-height:1.5;margin:15px 0 25px}
-.project-grid{display:grid;grid-template-columns:1.13fr 1fr;column-gap:clamp(24px,4.4vw,68px);row-gap:55px;align-items:start}
-.project.offset{margin-top:88px}
-.project-image{margin:0;position:relative;aspect-ratio:1.16;display:flex;flex-direction:column;justify-content:space-between;padding:25px;overflow:hidden}
+
+
+
 .dermatime{background:#e3e1d9;color:#53544e}
 .facetem{background:#d7d9d7;color:#505753}
 .afamed{background:#193e34;color:#e5e9e1}
 .podcast{background:#303133;color:#d6d6d4}
 .image-index{font-size:10px;letter-spacing:.12em}
-.placeholder-mark{display:flex;align-items:center;justify-content:center;gap:22px;flex:1;opacity:.48}
-.placeholder-mark span{font-weight:400;font-size:clamp(72px,9vw,145px);letter-spacing:-.08em}
-.placeholder-mark i{width:45px;height:1px;background:currentColor}
+
+
+
 figcaption{display:flex;justify-content:space-between;gap:12px;font-size:10px;letter-spacing:.09em}
 figcaption span{letter-spacing:0}
-.project-label{display:flex;justify-content:space-between;gap:15px;padding-top:20px}
-.project-label h3{font-size:16px;font-weight:500;letter-spacing:.02em;margin:0 0 8px}
-.project-label p{font-size:12px;line-height:1.5;color:var(--readable-muted);margin:0}
-.project-number{font-size:11px;color:var(--readable-muted)}
+
+
+
+
 .case-note{margin:40px 0 70px}
 .about{display:grid;grid-template-columns:1fr 1.25fr;gap:70px;border-top:1px solid var(--rule);padding-block:55px 90px}
 .about-aside>.eyebrow{margin:0}
@@ -77,9 +77,25 @@ figcaption span{letter-spacing:0}
 .site-footer{display:flex;justify-content:space-between;gap:22px;padding-block:26px;border-top:1px solid var(--rule);font-size:11px;color:var(--readable-muted)}
 .site-footer a{color:var(--ink)}
 @media(min-width:1600px){h1{font-size:116px}}
-@media(max-width:760px){.site-header{min-height:103px}.wordmark{font-size:20px}nav{gap:20px;font-size:12px}.hero{padding-top:43px;padding-bottom:44px}.hero>.eyebrow{font-size:10px;margin-bottom:28px}.hero-bottom{margin-top:30px;gap:25px;grid-template-columns:1fr}.hero-bottom p{justify-self:start;max-width:340px;font-size:15px;grid-row:1}.section-heading>.eyebrow{display:none}.project-grid{gap:33px 22px}.project.offset{margin-top:55px}.project-image{padding:16px;aspect-ratio:4/5}.placeholder-mark{gap:15px}.placeholder-mark span{font-size:76px}.placeholder-mark i{width:22px}figcaption{flex-direction:column;font-size:9px;gap:5px}.project-label h3{font-size:14px}.project-label p{font-size:11px}.about{gap:32px;grid-template-columns:1fr 1.5fr}.portrait-placeholder{width:140px}.about-copy p{font-size:14px}.site-footer>span:nth-child(2){display:none}}
-@media(max-width:480px){.site-header{gap:14px;min-height:100px}.wordmark{font-size:18px}.wordmark span{font-size:9px}nav{gap:16px;font-size:12px}nav a span{display:none}h1{font-size:clamp(36px,9.7vw,47px)}.project-grid{grid-template-columns:1fr;gap:35px}.project.offset{margin-top:0}.project-image{aspect-ratio:1.12;padding:22px}.placeholder-mark span{font-size:110px}.placeholder-mark i{width:40px}figcaption{flex-direction:row;font-size:10px}.project-label h3{font-size:16px}.project-label p{font-size:12px}.case-note{margin-bottom:50px}.about{grid-template-columns:1fr;padding-block:36px 55px;gap:30px}.about-aside{display:flex;justify-content:space-between;gap:15px;align-items:start}.portrait-placeholder{margin:0;width:94px;padding:10px}.portrait-placeholder>span{font-size:27px}.portrait-placeholder figcaption{font-size:9px;line-height:1.4}.about-copy h2{font-size:40px}.about-copy p{font-size:15px}.contact-details{align-items:flex-start;flex-direction:column;gap:8px}.contact{padding-bottom:40px}.site-footer{font-size:10px}}
+@media(max-width:760px){.site-header{min-height:103px}.wordmark{font-size:20px}nav{gap:20px;font-size:12px}.hero{padding-top:43px;padding-bottom:44px}.hero>.eyebrow{font-size:10px;margin-bottom:28px}.hero-bottom{margin-top:30px;gap:25px;grid-template-columns:1fr}.hero-bottom p{justify-self:start;max-width:340px;font-size:15px;grid-row:1}.section-heading>.eyebrow{display:none}figcaption{flex-direction:column;font-size:9px;gap:5px}.about{gap:32px;grid-template-columns:1fr 1.5fr}.portrait-placeholder{width:140px}.about-copy p{font-size:14px}.site-footer>span:nth-child(2){display:none}}
+@media(max-width:480px){.site-header{gap:14px;min-height:100px}.wordmark{font-size:18px}.wordmark span{font-size:9px}nav{gap:16px;font-size:12px}nav a span{display:none}h1{font-size:clamp(36px,9.7vw,47px)}figcaption{flex-direction:row;font-size:10px}.case-note{margin-bottom:50px}.about{grid-template-columns:1fr;padding-block:36px 55px;gap:30px}.about-aside{display:flex;justify-content:space-between;gap:15px;align-items:start}.portrait-placeholder{margin:0;width:94px;padding:10px}.portrait-placeholder>span{font-size:27px}.portrait-placeholder figcaption{font-size:9px;line-height:1.4}.about-copy h2{font-size:40px}.about-copy p{font-size:15px}.contact-details{align-items:flex-start;flex-direction:column;gap:8px}.contact{padding-bottom:40px}.site-footer{font-size:10px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
+
+/* Compact work index: four across on desktop, two on smaller screens. */
+.project-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:34px 22px;align-items:start}
+.project{min-width:0}
+.project-image{margin:0;position:relative;aspect-ratio:1;display:flex;flex-direction:column;justify-content:space-between;padding:18px;overflow:hidden}
+.placeholder-mark{display:flex;align-items:center;justify-content:center;gap:14px;flex:1;opacity:.48}
+.placeholder-mark span{font-weight:400;font-size:clamp(60px,6vw,94px);letter-spacing:-.08em}
+.placeholder-mark i{width:26px;height:1px;background:currentColor}
+.project-image figcaption{display:block;font-size:11px;letter-spacing:0;line-height:1.4}
+.project-label{display:flex;justify-content:space-between;gap:8px;padding-top:16px}
+.project-label h3{font-size:15px;font-weight:500;letter-spacing:.02em;margin:0 0 8px}
+.project-label p{font-size:12px;line-height:1.6;color:var(--readable-muted);margin:0;overflow-wrap:break-word}
+.project-number{font-size:11px;color:var(--readable-muted)}
+@media(max-width:1000px){.project-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:30px 22px}.placeholder-mark span{font-size:clamp(60px,10vw,94px)}}
+@media(max-width:480px){.project-grid{gap:26px 14px}.project-image{padding:12px}.placeholder-mark{gap:10px}.placeholder-mark span{font-size:54px}.placeholder-mark i{width:18px}.project-label{padding-top:13px}.project-label h3{font-size:14px;letter-spacing:0}.project-label p{font-size:12px}.project-number{display:none}.image-index{font-size:10px}}
+@media(max-width:300px){.project-grid{grid-template-columns:1fr}}
 </style>
   
 </head>
@@ -100,19 +116,19 @@ figcaption span{letter-spacing:0}
       <p class="prototype-note">Image placeholders · Original project imagery will be added.</p>
       <div class="project-grid">
         <article class="project">
-          <figure class="project-image dermatime" aria-label="DERMATIME image placeholder; original project imagery pending"><span class="image-index" aria-hidden="true">01 / 04</span><div class="placeholder-mark" aria-hidden="true"><span>01</span><i></i></div><figcaption>DERMATIME <span>Image placeholder</span></figcaption></figure>
+          <figure class="project-image dermatime" aria-label="DERMATIME image placeholder; original project imagery pending"><span class="image-index" aria-hidden="true">01 / 04</span><div class="placeholder-mark" aria-hidden="true"><span>01</span><i></i></div><figcaption>Image placeholder</figcaption></figure>
           <div class="project-label"><div><h3>DERMATIME</h3><p>Brand Identity / Packaging Design</p></div><span class="project-number" aria-hidden="true">01</span></div>
         </article>
-        <article class="project offset">
-          <figure class="project-image facetem" aria-label="FACETEM image placeholder; original project imagery pending"><span class="image-index" aria-hidden="true">02 / 04</span><div class="placeholder-mark" aria-hidden="true"><span>02</span><i></i></div><figcaption>FACETEM <span>Image placeholder</span></figcaption></figure>
+        <article class="project">
+          <figure class="project-image facetem" aria-label="FACETEM image placeholder; original project imagery pending"><span class="image-index" aria-hidden="true">02 / 04</span><div class="placeholder-mark" aria-hidden="true"><span>02</span><i></i></div><figcaption>Image placeholder</figcaption></figure>
           <div class="project-label"><div><h3>FACETEM</h3><p>Visual Identity / Brand Communication</p></div><span class="project-number" aria-hidden="true">02</span></div>
         </article>
         <article class="project">
-          <figure class="project-image afamed" aria-label="AFAMED image placeholder; original project imagery pending"><span class="image-index" aria-hidden="true">03 / 04</span><div class="placeholder-mark" aria-hidden="true"><span>03</span><i></i></div><figcaption>AFAMED <span>Image placeholder</span></figcaption></figure>
+          <figure class="project-image afamed" aria-label="AFAMED image placeholder; original project imagery pending"><span class="image-index" aria-hidden="true">03 / 04</span><div class="placeholder-mark" aria-hidden="true"><span>03</span><i></i></div><figcaption>Image placeholder</figcaption></figure>
           <div class="project-label"><div><h3>AFAMED</h3><p>Visual Identity Development / Art Direction</p></div><span class="project-number" aria-hidden="true">03</span></div>
         </article>
-        <article class="project offset">
-          <figure class="project-image podcast" aria-label="TO PODCAST image placeholder; original project imagery pending"><span class="image-index" aria-hidden="true">04 / 04</span><div class="placeholder-mark" aria-hidden="true"><span>04</span><i></i></div><figcaption>TO PODCAST <span>Image placeholder</span></figcaption></figure>
+        <article class="project">
+          <figure class="project-image podcast" aria-label="TO PODCAST image placeholder; original project imagery pending"><span class="image-index" aria-hidden="true">04 / 04</span><div class="placeholder-mark" aria-hidden="true"><span>04</span><i></i></div><figcaption>Image placeholder</figcaption></figure>
           <div class="project-label"><div><h3>TO PODCAST</h3><p>Concept / Key Visual</p></div><span class="project-number" aria-hidden="true">04</span></div>
         </article>
       </div>
